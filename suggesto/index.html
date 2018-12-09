@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./swag.css">
+    <title>Suggesto</title>
+</head>
+
+<body> 
+    <div class="view">
+        <div class="nav">
+            <span id="nav--lalign">Suggesto</span>
+            <button id="nav--ralign">About</button>
+        </div>
+
+
+        <div class="split left">
+            <div class="centered">
+                <input type="text" placeholder="City, Country">
+                <button id="btn--pos">
+                    <img src="gps1.png">
+                </button>
+            </div>
+        </div>
+
+        <div class="split right">
+            <div class="suggestion--style">
+                <h1 id="cityPlace"></h1>
+                <span id="line"></span>
+                <img id="wea--image" class="suggestion--image"></img>
+                <p id="stext" class="suggestion--text"></p>
+                <div class="temp--card">
+                    <p class="card" id="curtemp"></p>
+                    <p class="card" id="predtemp"></p>
+                </div>
+            </div>
+
+            <div id="icons" class=" icons--container"> 
+
+                <li class="flex-item" id="tornado">
+                    <img src="png/001-tornado.png">
+                </li>
+                <li class="flex-item">
+                    <img src="png/002-heat.png">
+                </li>
+                <li class="flex-item">
+                    <img src="png/003-night.png">
+                </li>
+                <li class="flex-item">
+                    <img src="png/004-sun.png">
+                </li>
+                <li class="flex-item">
+                    <img src="png/005-rain.png">
+                </li>
+                <li class="flex-item">
+                    <img src="png/006-rain-1.png">
+                </li>
+                <li class="flex-item">
+                    <img src="png/007-cloud.png">
+                </li>
+                <li class="flex-item">
+                    <img src="png/008-lightning.png">
+                </li>
+                <li class="flex-item">
+                    <img src="png/009-snowflakes.png">
+                </li>
+                <li class="flex-item">
+                    <img src="png/010-thermometer.png">
+                </li>
+                <li class="flex-item">
+                    <img src="png/011-wind.png">
+                </li>
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <p class="falign">Made by
+                <a href="https://twitter.com/snehalhosmani">Snehal Hosmani</a>,Fork this on
+                <a href="https://github.com/Sne101">GitHub</a>
+                </br>Made using
+                <a href="https://openweathermap.org/api">openweathermap</a> api
+            </p>
+        </div>
+        <!-- <p class="falign"></p> -->
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>About</h2>
+            </div>
+            <div class="modal-body">
+                <p>Based on your Location/City and weather forecast, suggesto suggests you to carry your basic amenities to
+                    protect you from weather &#x26C4; &#x26C5; </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="myModal1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close1">&times;</span>
+                    <h2>Argghhh!!!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>OHOHOHO!!! That aint a city!! </p>
+                </div>
+    
+            </div>
+    
+        </div>
+
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
